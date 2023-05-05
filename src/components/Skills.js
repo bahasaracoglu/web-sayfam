@@ -1,9 +1,9 @@
-import jsLogo from "./skills/jsLogo.png";
-import figmaLogo from "./skills/figmaLogo.png";
-import nodeLogo from "./skills/nodeLogo.png";
-import reacLogo from "./skills/reactLogo.png";
-import reduxLogo from "./skills/reduxLogo.png";
-import vsLogo from "./skills/vsLogo.png";
+import jsLogo from "../skills/jsLogo.png";
+import figmaLogo from "../skills/figmaLogo.png";
+import nodeLogo from "../skills/nodeLogo.png";
+import reacLogo from "../skills/reactLogo.png";
+import reduxLogo from "../skills/reduxLogo.png";
+import vsLogo from "../skills/vsLogo.png";
 
 export default function Skills() {
   return (

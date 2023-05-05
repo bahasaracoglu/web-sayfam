@@ -1,6 +1,7 @@
 import "./App.css";
-import Info from "./Info";
-import Skills from "./Skills";
+import Info from "./components/Info";
+import { Projects } from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="mx-auto w-9/12">
         <Info />
         <Skills />
+        <Projects />
       </div>
     </div>
   );

@@ -3,14 +3,14 @@ export default function () {
     <header className="App-header flex flex-col">
       <div className="toggle flex self-end my-7">
         <button></button>
-        <h3>DARK MODE</h3>
-        <h3>TÜRKÇE' YE GEÇ</h3>
+        <h4>DARK MODE</h4>
+        <h4>TÜRKÇE' YE GEÇ</h4>
       </div>
       <section className="info flex flex-row">
         <div className="info-text flex flex-col">
           <div className="w-7/12 p-2  ">
             <p>
-              <h1>Hi! </h1>
+              <h2>Hi! </h2>
             </p>
             <p>
               <h1>
