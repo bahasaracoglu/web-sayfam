@@ -3,6 +3,7 @@ import arrowRight from "../projects/arrow-right.svg";
 export function Projects() {
   return (
     <section id="Projects ">
+      <h1 className="text-center">Projects</h1>
       <div className="flex flex-row justify-center gap-10">
         <div id="Project-card " className="w-4/12 p-10">
           <h3>Title</h3>

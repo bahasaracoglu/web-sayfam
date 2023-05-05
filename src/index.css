@@ -128,14 +128,6 @@ table {
   border-spacing: 0;
 }
 
-* {
-  border: 1px solid limegreen;
-  background-color: rgba(116, 116, 116, 0.1);
-}
-body {
-  margin: 0;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,5 +1,6 @@
 import "./App.css";
 import Info from "./components/Info";
+import Profile from "./components/Profile";
 import { Projects } from "./components/Projects";
 import Skills from "./components/Skills";
 
@@ -9,6 +10,7 @@ function App() {
       <div className="mx-auto w-9/12">
         <Info />
         <Skills />
+        <Profile />
         <Projects />
       </div>
     </div>
