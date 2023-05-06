@@ -2,7 +2,7 @@ export default function Profile() {
   return (
     <section id="Profile">
       <h1 className="text-center">Profile</h1>
-      <div className="flex flex-row justify-center gap-10 bg-[#F4F4F4]">
+      <div className="flex flex-row justify-center gap-10 bg-[#F4F4F4] rounded-[12px]">
         <div id="Basic-information" className="flex flex-col w-4/12 p-10">
           <h4 className="text-[#EA2678]">Basic Information</h4>
           <ul>

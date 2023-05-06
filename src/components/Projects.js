@@ -5,7 +5,10 @@ export function Projects() {
     <section id="Projects ">
       <h1 className="text-center">Projects</h1>
       <div className="flex flex-row justify-center gap-10">
-        <div id="Project-card " className="w-4/12 p-10">
+        <div
+          id="Project-card "
+          className="w-4/12 p-10 bg-[#DDEEFE] rounded-[12px]"
+        >
           <h3>Title</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
@@ -13,10 +16,10 @@ export function Projects() {
           </p>
 
           <ul className="flex flex-row gap-5 my-5">
-            <li>react</li>
-            <li>vercel</li>
-            <li>axios</li>
-            <li>router</li>
+            <li id="used-skills">react</li>
+            <li id="used-skills">vercel</li>
+            <li id="used-skills">axios</li>
+            <li id="used-skills">router</li>
           </ul>
           <div id="Project-Links" className="flex justify-between">
             <a href="#">View on GitHub</a>
@@ -29,7 +32,10 @@ export function Projects() {
             <img src={laptop} className="mt-5" />
           </div>
         </div>
-        <div id="Project-card " className="w-4/12 p-10">
+        <div
+          id="Project-card "
+          className="w-4/12 p-10 bg-[#D9F6F1] rounded-[12px]"
+        >
           <h3>Title</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
