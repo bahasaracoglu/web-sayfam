@@ -16,6 +16,8 @@ export default function () {
 
   return (
     <header className="App-header flex flex-col">
+      <div className="absolute w-16 h-16 rounded-full bg-gray-500"></div>
+
       <div className="toggle flex self-end my-20 gap-5">
         <span
           onClick={() => changeTheme()}
@@ -33,30 +35,30 @@ export default function () {
         <h4 className="border-solid border-r-2 pr-5">DARK MODE</h4>
         <h4>TÜRKÇE' YE GEÇ</h4>
       </div>
-      <section className="info flex flex-row justify-between">
-        <div className="info-text flex flex-col w-6/12 ">
+      <section className="info flex flex-row justify-between mb-20">
+        <div className="info-text flex flex-col w-3/5 ">
           <div className=" p-2  ">
             <p>
               <h2 className="mb-5">Hi!👋</h2>
             </p>
             <p>
-              <h1>
+              <h1 id="info-text">
                 I’m Baha. I’m a full-stack developer. I can craft solid and
                 scalable frontend products. Let’s meet!
               </h1>
             </p>
           </div>
-          <div className="p-2 flex gap-5">
-            <a href="https://github.com/bahasaracoglu">
-              {" "}
-              <img src={gitHub} />
-            </a>
+          <div className="mt-9 p-2 flex gap-5">
             <a href="https://www.linkedin.com/in/baha-saraçoğlu/">
               {" "}
               <img src={linkedIn} />
             </a>
+            <a href="https://github.com/bahasaracoglu">
+              {" "}
+              <img src={gitHub} />
+            </a>
           </div>
-          <div className="w-2/3 p-2">
+          <div className=" w-11/12 p-2">
             <p>
               <h3>
                 Currently Freelancing for UX, UI, & Web Design Project . Invite
@@ -66,7 +68,11 @@ export default function () {
           </div>
         </div>
 
-        <img className="w-[18vw] h-[18vw] object-fit" src={foto} alt="" />
+        <img
+          className="min-w-400 min-h-200 object-relative "
+          src={foto}
+          alt=""
+        />
       </section>
     </header>
   );
