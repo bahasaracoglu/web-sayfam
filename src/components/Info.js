@@ -1,6 +1,6 @@
 import gitHub from "../info/github.svg";
 import linkedIn from "../info/LinkedIn.svg";
-import foto from "../info/foto.svg";
+import foto from "../info/foto.jpeg";
 import { useState } from "react";
 
 export default function () {
@@ -16,7 +16,7 @@ export default function () {
 
   return (
     <section className="bg-[#F4F4F4]">
-      <header className="App-header flex flex-col w-7/12 mx-auto ">
+      <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] ">
         <div className="absolute w-16 h-16 rounded-full bg-gray-500"></div>
 
         <div
@@ -36,7 +36,8 @@ export default function () {
             ></span>
           </span>
 
-          <h4 className="border-solid border-r-2 pr-5">DARK MODE</h4>
+          <h4>DARK MODE</h4>
+          <span>|</span>
           <h4>
             <span className="text-[#E92577]">TÜRKÇE</span>'YE GEÇ
           </h4>
@@ -81,7 +82,7 @@ export default function () {
           </div>
 
           <img
-            className="min-w-400 min-h-200 object-relative "
+            className="mt-5 object-cover w-[341px] h-[341px]  shadow-red rounded-[22px] "
             src={foto}
             alt=""
           />
