@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div className="App w-screen h-[3094px] bg-white ">
-      <div className="mx-auto w-7/12">
+      <div className="mx-auto ">
         <Info />
         <Skills />
         <Profile />

@@ -177,17 +177,38 @@ a {
   line-height: 150%;
 }
 
-#info.text {
+#info-text-hi {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+#info-text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 42px;
-  line-height: 64px;
+  line-height: 152%;
   /* or 152% */
 
   letter-spacing: 0.01em;
 
   color: #0a0a14;
+}
+
+#info-text-footer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
 
 #footer-text {
@@ -196,25 +217,29 @@ a {
   font-weight: 500;
   font-size: 42px;
   line-height: 150%;
-  /* or 63px */
-
   text-align: right;
   letter-spacing: 0.01em;
 }
 
+#toggle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #777777;
+}
+
 #used-skills {
   padding: 0.5rem;
-
   background: #ffffff;
   border-radius: 76px;
-
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
-  /* identical to box height, or 16px */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.05em;
