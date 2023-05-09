@@ -14,34 +14,23 @@ export default function Profile() {
               Basic Information
             </h4>
             <ul className="flex flex-col gap-5">
-              <li>
-                <h5
-                  id="info-heads"
-                  className="flex flex-row  justify-items-start"
-                >
-                  Doğum Tarihi{" "}
-                  <span className="flex justify-center" id="info-value">
-                    15.11.1993
-                  </span>
-                </h5>
+              <li className="flex flex-row">
+                <h5 id="info-heads">Doğum Tarihi</h5>
+                <span id="info-value">15.11.1993</span>
               </li>
-              <li>
-                <h5 id="info-heads">
-                  İkamet Şehri <span id="info-value">İstanbul</span>
-                </h5>
+              <li className="flex flex-row">
+                <h5 id="info-heads">İkamet Şehri</h5>
+                <span id="info-value">İstanbul</span>
               </li>
-              <li>
-                <h5 id="info-heads">
-                  Eğitim Durumu
-                  <span id="info-value">
-                    Eskişehir Osmangazi Üniversitesi Endüstri Mühendisliği, 2016
-                  </span>
-                </h5>
+              <li className="flex flex-row">
+                <h5 id="info-heads">Eğitim Durumu</h5>
+                <span id="info-value">
+                  Eskişehir Osmangazi Üniversitesi Endüstri Mühendisliği, 2016
+                </span>
               </li>
-              <li>
-                <h5 id="info-heads">
-                  Tercih Ettiği Rol <span id="info-value">Frontend, UI</span>
-                </h5>
+              <li className="flex flex-row">
+                <h5 id="info-heads">Tercih Ettiği Rol</h5>
+                <span id="info-value">Frontend, UI</span>
               </li>
             </ul>
           </div>
