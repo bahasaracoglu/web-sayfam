@@ -8,7 +8,7 @@ export default function Profile() {
         <div className="flex flex-row justify-between rounded-[12px]">
           <div
             id="Basic-information"
-            className="flex flex-col w-[46.5%] p-10 gap-5 mt-10 bg-[#FFFFFF] shadow-gray"
+            className="flex w-[46.5%] max-w-[500px] flex-col  p-10 gap-5 mt-10 bg-[#FFFFFF] shadow-gray"
           >
             <h4 id="basic-info" className="text-[#EA2678]">
               Basic Information

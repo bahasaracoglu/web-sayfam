@@ -1,6 +1,3 @@
-import laptop from "../projects/laptop.png";
-import arrowRight from "../projects/arrow-right.svg";
-import s11g2 from "../projects/s11g2.png";
 import Project from "./Project";
 export function Projects() {
   return (

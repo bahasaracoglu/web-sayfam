@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="App w-screen h-[3094px] bg-white ">
+    <div className="App w-max-screen h-[3094px] bg-white ">
       <div className="mx-auto ">
         <Info />
         <Skills />

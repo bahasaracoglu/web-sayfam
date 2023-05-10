@@ -127,14 +127,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
+
 * {
   border: 1px solid limegreen;
   background-color: rgba(116, 116, 116, 0.1);
 }
 body {
   margin: 0;
-}*/
+}
 
 @tailwind base;
 @tailwind components;
@@ -182,6 +182,15 @@ body {
   line-height: 150%;
   text-align: right;
   letter-spacing: 0.01em;
+}
+
+#footer-links {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
 }
 
 #toggle {

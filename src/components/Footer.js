@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <section>
-      <footer className="w-1/2 flex mx-auto  ">
-        <div className="flex flex-row gap-5">
-          <span className="flex w-2/3 justify-center items-center">
+      <footer className="w-7/12 flex mx-auto max-w-[1440px] ">
+        <div className="flex flex-row gap-14 ml-7 mt-[12.6%] mb-[16.0%] justify-center items-center">
+          <span className="flex w-6/12 ">
             <h2 id="footer-text" className="text-[#0A0A14]">
               Let’s work together on your next product.
             </h2>
@@ -11,22 +11,22 @@ export default function Footer() {
           <nav>
             <ul className="flex flex-col">
               <li>
-                <a href="#" className="text-[#1769FF]">
+                <a id="footer-links" href="#" className="text-[#1769FF]">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#0A0A14]">
+                <a id="footer-links" href="#" className="text-[#0A0A14]">
                   Personal Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#0077B5]">
+                <a id="footer-links" href="#" className="text-[#0077B5]">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[#AF0C48]">
+                <a id="footer-links" href="#" className="text-[#AF0C48]">
                   Email
                 </a>
               </li>
