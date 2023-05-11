@@ -35,6 +35,7 @@ export default function () {
       <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
         <div className="absolute w-[10%] aspect-square rounded-full bg-[#D9D9D9] dark:bg-[#525252] left-[23%] top-[-6.1%]"></div>
         <div className="absolute w-[217px] h-[59px] rounded-[29.5px] bg-[#EA2678]  right-[-23.2%] bottom-[19%]"></div>
+        <div className="absolute w-[10.9%] aspect-square rounded-full  border-[21px] border-solid border-[#D9D9D9]  dark:bg-[#525252] right-[10.5%] bottom-[-8.4%]"></div>
 
         <div
           id="toggle"
