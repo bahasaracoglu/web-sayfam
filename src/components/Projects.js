@@ -2,7 +2,7 @@ import Project from "./Project";
 export function Projects() {
   return (
     <section id="Projects">
-      <div className="py-11 max-w-[1440px] flex flex-col mx-auto">
+      <div className="py-[3.2rem] max-w-[1440px] flex flex-col mx-auto">
         <h1
           className="text-center py-8 dark:text-[#FFFFFF]"
           id="section-title-small"

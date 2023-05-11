@@ -5,7 +5,7 @@ export default function Profile() {
       className=" py-[4.5rem] bg-[#F4F4F4] dark:bg-[#2A262B]"
     >
       <div className="w-7/12 mx-auto max-w-[1440px] relative">
-        <div className="absolute w-[10.9%] aspect-square rounded-full  border-[21px] border-solid border-[#EA2678]  dark:bg-[#525252] right-[-18.8%] top-[-25.1%]"></div>
+        <div className="absolute w-[10.9%] aspect-square rounded-full  border-[21px] border-solid border-[#EA2678]  right-[-18.8%] top-[-25.1%]"></div>
 
         <h1
           className="text-center text-[#000000] dark:text-[#FFFFFF]"
@@ -16,9 +16,9 @@ export default function Profile() {
         <div className="flex flex-row justify-center  rounded-[12px] text-[#000000] dark:text-[#FFFFFF] ">
           <div
             id="Basic-information"
-            className="flex w-[46.5%] max-w-[500px] flex-col ml-7  p-10 gap-5 mt-[2.3rem] bg-[#FFFFFF] dark:bg-[#525252] shadow-gray"
+            className="flex w-[46.5%] max-w-[500px] flex-col ml-7  p-10 gap-5 mt-[2rem] bg-[#FFFFFF] dark:bg-[#525252] shadow-gray"
           >
-            <h4 id="basic-info" className="text-[#EA2678] ">
+            <h4 id="basic-info" className="text-[#EA2678] mb-[0.8rem]">
               Basic Information
             </h4>
             <ul className="flex flex-col gap-5  ">
@@ -43,7 +43,12 @@ export default function Profile() {
             </ul>
           </div>
           <div className="flex flex-col justify-center w-6/12 ml-[1.4rem] p-10 mt-[1.5rem] gap-5">
-            <h4 id="about-me-title">About me</h4>
+            <span className="relative">
+              <span className="absolute w-[90px] h-[18px] bg-[#82BBFF] top-[1.04rem] left-[-0.7rem] rounded-[4px] dark:bg-[#82BBFF]"></span>{" "}
+              <h4 id="about-me-title" className="relative z-10">
+                About me
+              </h4>
+            </span>{" "}
             <p id="about-me" className="mb-1">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               aut, odit laborum aliquam voluptatum nisi mollitia.
