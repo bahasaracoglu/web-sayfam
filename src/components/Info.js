@@ -3,6 +3,7 @@ import gitHubdark from "../info/githubdark.svg";
 import linkedIn from "../info/LinkedIn.svg";
 import linkedInDark from "../info/LinkedIndark.svg";
 import foto from "../info/foto.jpeg";
+import foto2 from "../info/000034.JPG";
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../contexts/Context";
 
@@ -75,10 +76,14 @@ export default function () {
               <p>
                 <h1
                   id="info-text"
-                  className="text-[#0a0a14]  dark:text-[#FFFFFF]"
+                  className="text-[#0a0a14] dark:text-[#FFFFFF]"
                 >
-                  I’m Baha. I’m a full-stack developer. I can craft solid and
-                  scalable frontend products. Let’s meet!
+                  <span className="relative">
+                    <span className="absolute w-[78%] h-[61%] bg-[#E92577] top-[2.04rem] right-[3.25rem] rounded-[4px]"></span>{" "}
+                    <span className="relative z-10">I’m Baha.</span>
+                  </span>{" "}
+                  I’m a full-stack developer. I can craft solid and scalable
+                  frontend products. Let’s meet!
                 </h1>
               </p>
             </div>
@@ -115,7 +120,7 @@ export default function () {
 
           <img
             className="mt-[3.4rem] mr-2 object-cover w-[341px] h-[341px]  shadow-red rounded-[22px] "
-            src={foto}
+            src={foto2}
             alt=""
           />
         </section>
