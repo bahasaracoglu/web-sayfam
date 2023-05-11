@@ -127,7 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+/*
 * {
   border: 1px solid limegreen;
   background-color: rgba(116, 116, 116, 0.1);
@@ -135,7 +135,7 @@ table {
 body {
   margin: 0;
 }
-
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -228,7 +228,6 @@ body {
   font-size: 24px;
   line-height: 150%;
   text-transform: uppercase;
-  color: #777777;
 }
 
 #section-title {
@@ -241,7 +240,7 @@ body {
 
   letter-spacing: 0.01em;
 
-  color: #0a0a14;
+  color: ;
 }
 
 #section-title-small {
@@ -250,11 +249,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
-  /* identical to box height */
-
   letter-spacing: 0.01em;
-
-  color: #000000;
 }
 
 #info-heads {
@@ -266,7 +261,7 @@ body {
   line-height: 22px;
   letter-spacing: 0.01em;
   width: 37.7%;
-  color: #000000;
+
   margin-right: 6.3%;
 }
 
@@ -280,7 +275,6 @@ body {
   line-height: 22px;
   letter-spacing: 0.01em;
   width: 56%;
-  color: #000000;
 }
 
 #basic-info {
@@ -300,7 +294,6 @@ body {
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.01em;
-  color: #000000;
 }
 
 #about-me-title {
@@ -310,7 +303,6 @@ body {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.01em;
-  color: #000000;
 }
 
 #projects-title {
@@ -319,11 +311,8 @@ body {
   font-weight: 700;
   font-size: 29px;
   line-height: 39px;
-  /* identical to box height */
 
   letter-spacing: 0.05em;
-
-  color: #000000;
 }
 
 #projects-body {
@@ -332,9 +321,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
-
-  color: #000000;
 }
 
 #project-links {
@@ -343,7 +329,4 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
-  /* identical to box height, or 30px */
-
-  color: #000000;
 }

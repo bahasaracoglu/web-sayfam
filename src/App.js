@@ -17,7 +17,7 @@ function App() {
         setTheme,
       }}
     >
-      <div className="App w-max-screen h-[3094px] bg-white ">
+      <div className="App w-max-screen h-[3094px] bg-white dark:bg-[#484148] ">
         <div className="mx-auto ">
           <Info />
           <Skills />

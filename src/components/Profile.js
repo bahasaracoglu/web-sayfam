@@ -1,19 +1,22 @@
 export default function Profile() {
   return (
-    <section id="Profile" className=" py-[5rem] bg-[#F4F4F4]">
+    <section id="Profile" className=" py-[5rem] bg-[#F4F4F4] dark:bg-[#2A262B]">
       <div className="w-7/12 mx-auto max-w-[1440px] ">
-        <h1 className="text-center" id="section-title-small">
+        <h1
+          className="text-center text-[#000000] dark:text-[#FFFFFF]"
+          id="section-title-small"
+        >
           Profile
         </h1>
-        <div className="flex flex-row justify-between rounded-[12px]">
+        <div className="flex flex-row justify-between rounded-[12px] text-[#000000] dark:text-[#FFFFFF] ">
           <div
             id="Basic-information"
-            className="flex w-[46.5%] max-w-[500px] flex-col  p-10 gap-5 mt-10 bg-[#FFFFFF] shadow-gray"
+            className="flex w-[46.5%] max-w-[500px] flex-col  p-10 gap-5 mt-10 bg-[#FFFFFF] dark:bg-[#525252] shadow-gray"
           >
-            <h4 id="basic-info" className="text-[#EA2678]">
+            <h4 id="basic-info" className="text-[#EA2678] ">
               Basic Information
             </h4>
-            <ul className="flex flex-col gap-5">
+            <ul className="flex flex-col gap-5  ">
               <li className="flex flex-row">
                 <h5 id="info-heads">Doğum Tarihi</h5>
                 <span id="info-value">15.11.1993</span>

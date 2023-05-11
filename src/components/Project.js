@@ -1,11 +1,15 @@
 import laptop from "../projects/laptop.png";
 import arrowRight from "../projects/arrow-right.svg";
+import arrowRightDark from "../projects/arrow-right-dark.svg";
 import s11g2 from "../projects/s11g2.png";
+import { Context } from "../contexts/Context";
+import { useContext } from "react";
 export default function Project() {
+  const { theme } = useContext(Context);
   return (
     <div
       id="Project-card "
-      className="	box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#DDEEFE] rounded-[12px]"
+      className="	box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#DDEEFE] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#FFFFFF]"
     >
       <h3 id="projects-title" className="mb-4">
         Title
@@ -25,7 +29,10 @@ export default function Project() {
         <a href="#">View on GitHub</a>
         <a href="#" className="flex">
           Go to app
-          <img src={arrowRight} alt="arrowRight" />
+          <img
+            src={theme === "light" ? arrowRight : arrowRightDark}
+            alt="arrowRight"
+          />
         </a>
       </div>
       <div

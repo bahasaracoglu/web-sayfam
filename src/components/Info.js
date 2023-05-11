@@ -59,7 +59,7 @@ export default function () {
 
           <h4 className="dark:text-[#D9D9D9] text-[#777777]">DARK MODE</h4>
           <span>|</span>
-          <h4>
+          <h4 className="dark:text-[#777777]">
             <span className="text-[#E92577]">TÜRKÇE</span>'YE GEÇ
           </h4>
         </div>
