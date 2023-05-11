@@ -32,8 +32,8 @@ export default function () {
   console.log(theme);
   return (
     <section className="bg-[#F4F4F4]  dark:bg-[#2A262B] }">
-      <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] ">
-        <div className="absolute w-16 h-16 rounded-full bg-gray-500"></div>
+      <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
+        <div className="absolute w-[10%] aspect-square rounded-full bg-[#D9D9D9] left-[23%] top-[-6.1%]"></div>
 
         <div
           id="toggle"
@@ -59,8 +59,8 @@ export default function () {
           </span>
 
           <h4 className="dark:text-[#D9D9D9] text-[#777777]">DARK MODE</h4>
-          <span>|</span>
-          <h4 className="dark:text-[#777777]">
+          <span className="text-[#777777]">|</span>
+          <h4 className="dark:text-[#777777] text-[#777777]">
             <span className="text-[#E92577]">TÜRKÇE</span>'YE GEÇ
           </h4>
         </div>
@@ -97,22 +97,26 @@ export default function () {
             </div>
             <div
               id="info-text-footer"
-              className=" w-10/12  px-[0.5rem] pt-2 pb-[0.7rem] "
+              className=" w-[85%] px-[0.5rem] pt-2 pb-[0.7rem] "
             >
               <p className="text-[#000000] dark:text-[#FFFFFF]">
-                Currently
-                <span className="text-[#AF0C48] dark:text-[#EA2678]">
+                <span className=" w-[10%]">
                   {" "}
-                  Freelancing{" "}
-                </span>
-                for
-                <span className="text-[#AF0C48] dark:text-[#EA2678] tracking-wider">
-                  {" "}
-                  UX, UI, & Web Design{" "}
-                </span>
-                Project . Invite me to join your team {"->"}
+                  Currently
+                  <span className="text-[#AF0C48] dark:text-[#EA2678]">
+                    {" "}
+                    Freelancing{" "}
+                  </span>
+                  for
+                  <span className="text-[#AF0C48] dark:text-[#EA2678] tracking-wider">
+                    {" "}
+                    UX, UI, & Web Design{" "}
+                  </span>
+                  Project.
+                </span>{" "}
+                Invite me to join your team {"->"}
                 <span className="text-[#AF0C48] underline tracking-widest dark:text-[#EA2678]">
-                  pratamaiosi@gmail.com
+                  bahasaracoglu@gmail.com
                 </span>
               </p>
             </div>
