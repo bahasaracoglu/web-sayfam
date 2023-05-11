@@ -7,7 +7,7 @@ import vsLogo from "../skills/vsLogo.png";
 
 export default function Skills() {
   return (
-    <div className="flex justify-center flex-col items-center my-24">
+    <div className="flex justify-center flex-col items-center my-20">
       <h1 id="section-title">Skills</h1>
       <div className="skills-img-container ">
         <ul className="flex gap-8 justify-center items-center text-center py-10">
