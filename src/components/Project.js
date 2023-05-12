@@ -5,7 +5,9 @@ import s11g2 from "../projects/s11g2.png";
 import { Context } from "../contexts/Context";
 import { useContext } from "react";
 export default function Project(props) {
-  const { theme } = useContext(Context);
+  const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
+  const lang = i18n.language;
+
   const { data } = props;
   return (
     <div
@@ -13,19 +15,23 @@ export default function Project(props) {
       className={`box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[${data.lightBG}] rounded-[12px] dark:bg-[${data.darkBG}] text-[#000000] dark:text-[#FFFFFF]`}
     >
       <h3 id="projects-title" className="mb-4">
-        {data.titleEn}
+        {lang === "tr" ? data.titleTr : data.titleEn}
       </h3>
-      <p id="projects-body">{data.bodyEn}</p>
+      <p id="projects-body">{lang === "tr" ? data.bodyTr : data.bodyEn}</p>
 
       <ul className="flex flex-row flex-wrap w-80 gap-3 my-5">
-        {data.skillsUsed.map((skill) => {
-          return <li id="used-skills">{skill}</li>;
+        {data.skillsUsed.map((skill, i) => {
+          return (
+            <li key={i} id="used-skills">
+              {skill}
+            </li>
+          );
         })}
       </ul>
       <div id="project-links" className="flex justify-between mt-4">
-        <a href={data.gitHubLink}>View on GitHub</a>
+        <a href={data.gitHubLink}>{t("projectViewGitHub")}</a>
         <a href={data.vercelLink} className="flex">
-          Go to app
+          {t("projectVercel")}
           <img
             src={theme === "light" ? arrowRight : arrowRightDark}
             alt="arrowRight"

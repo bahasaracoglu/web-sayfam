@@ -42,7 +42,7 @@ export default function () {
 
         <div
           id="toggle"
-          className="flex self-end mt-[4.5rem] mb-[3.5rem] gap-5 justify-center items-center"
+          className="flex self-end mt-[4.5rem] mb-[3.5rem] gap-4 justify-center items-center"
         >
           <span
             onClick={themeToggle}
@@ -51,7 +51,7 @@ export default function () {
             <span
               className={
                 theme === "light"
-                  ? `bg-[#FFE86E] p-1 rounded-full w-4 h-4 flex ml-6 relative`
+                  ? `bg-[#FFE86E] p-1 rounded-full w-4 h-4 flex ml-7 relative`
                   : `bg-[#FFE86E] p-1 rounded-full w-4 h-4 flex relative`
               }
             >
@@ -63,22 +63,29 @@ export default function () {
             </span>
           </span>
 
-          <h4 className="dark:text-[#D9D9D9] text-[#777777]">DARK MODE</h4>
+          <h4 className="dark:text-[#D9D9D9] text-[#777777] mr-[-0.5rem]">
+            DARK MODE
+          </h4>
           <span className="text-[#777777]">|</span>
           {i18n.language === "en" ? (
             <h4
               onClick={() => handleChangeLang("tr")}
               className="dark:text-[#777777] text-[#777777]"
             >
-              <span className="text-[#E92577]">TÜRKÇE</span>
+              <span className="text-[#E92577]  hover:text-[#e92577c0]">
+                TÜRKÇE
+              </span>
               'YE GEÇ
             </h4>
           ) : (
             <h4
               onClick={() => handleChangeLang("en")}
-              className="dark:text-[#777777] text-[#777777]"
+              className="dark:text-[#777777] text-[#777777] "
             >
-              TO <span className="text-[#E92577]">ENGLISH</span>
+              TO{" "}
+              <span className="text-[#E92577] hover:text-[#e92577c0]">
+                ENGLISH
+              </span>
             </h4>
           )}
         </div>
@@ -132,15 +139,18 @@ export default function () {
                   {t("infoFooter5")}
                 </span>{" "}
                 {t("infoFooter6")} {"->"}
-                <span className="text-[#AF0C48] underline tracking-widest dark:text-[#EA2678]">
+                <a
+                  href="mailto: bahasaracoglu@gmail.com"
+                  className="text-[#AF0C48] underline tracking-widest dark:text-[#EA2678]"
+                >
                   {t("infoEmail")}
-                </span>
+                </a>
               </p>
             </div>
           </div>
 
           <img
-            className="mt-[3.4rem] mr-2 object-cover w-[341px] h-[341px]  shadow-red rounded-[22px] "
+            className="mt-[3.4rem] mr-2 object-cover w-[341px] h-[341px]  shadow-red rounded-[22px] dark:brightness-[.9] "
             src={foto2}
             alt=""
           />
