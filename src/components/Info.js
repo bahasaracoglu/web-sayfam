@@ -94,7 +94,7 @@ export default function () {
                 id="info-text-hi"
                 className="mb-5 text-[#000000] dark:text-[#FFFFFF]"
               >
-                Hi!👋
+                {t("infoHeader")}
               </p>
               <p>
                 <h1
@@ -103,10 +103,9 @@ export default function () {
                 >
                   <span className="relative">
                     <span className="absolute w-[78%] h-[61%] bg-[#E92577] top-[2.04rem] right-[3.25rem] rounded-[4px]"></span>{" "}
-                    <span className="relative z-10">I’m Baha.</span>
+                    <span className="relative z-10">{t("infoName")}</span>
                   </span>{" "}
-                  I’m a full-stack developer. I can craft solid and scalable
-                  frontend products. Let’s meet!
+                  {t("infoParag")}
                 </h1>
               </p>
             </div>
@@ -125,21 +124,21 @@ export default function () {
               <p className="text-[#000000] dark:text-[#FFFFFF]">
                 <span className=" w-[10%]">
                   {" "}
-                  Currently
+                  {t("infoFooter1")}
                   <span className="text-[#AF0C48] dark:text-[#EA2678]">
                     {" "}
-                    Freelancing{" "}
+                    {t("infoFooter2")}{" "}
                   </span>
-                  for
+                  {t("infoFooter3")}
                   <span className="text-[#AF0C48] dark:text-[#EA2678] tracking-wider">
                     {" "}
-                    UX, UI, & Web Design{" "}
+                    {t("infoFooter4")}{" "}
                   </span>
-                  Project.
+                  {t("infoFooter5")}
                 </span>{" "}
-                Invite me to join your team {"->"}
+                {t("infoFooter6")} {"->"}
                 <span className="text-[#AF0C48] underline tracking-widest dark:text-[#EA2678]">
-                  bahasaracoglu@gmail.com
+                  {t("infoEmail")}
                 </span>
               </p>
             </div>
