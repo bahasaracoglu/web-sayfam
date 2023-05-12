@@ -12,7 +12,10 @@ export default function Project(props) {
   return (
     <div
       id="Project-card "
-      className={`box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[${data.lightBG}] rounded-[12px] dark:bg-[${data.darkBG}] text-[#000000] dark:text-[#FFFFFF]`}
+      className={
+        data &&
+        `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[${data.lightBG}] rounded-[12px] dark:bg-[${data.darkBG}] text-[#000000] dark:text-[#FFFFFF]`
+      }
     >
       <h3 id="projects-title" className="mb-4">
         {lang === "tr" ? data.titleTr : data.titleEn}

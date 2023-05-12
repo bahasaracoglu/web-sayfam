@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Project from "./Project";
 import { Context } from "../contexts/Context";
 export function Projects() {
-  const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
+  const { t } = useContext(Context);
   const projectsData = [
     {
       titleEn: "FlowFeed",
