@@ -76,6 +76,8 @@ const resources = {
       aboutMeSecondParag:
         "I am a believer in teamwork because projects that blend different perspectives are stronger. Together we can work to push the boundaries of the web world and take the user experience to new levels!",
       projectsTitle: "Projects",
+      projectViewGitHub: "View on GitHub",
+      projectVercel: "Go to App",
       footer1: "Let's",
       footer2: "work together",
       footer3: "on your next product.",

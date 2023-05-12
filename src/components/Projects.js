@@ -48,7 +48,7 @@ export function Projects() {
         </h1>
         <div className="flex flex-row justify-center gap-[4.2rem]  ">
           {projectsData.map((project, i) => {
-            return <Project key={i} data={project} />;
+            return <Project key={i} data={project} index={i} />;
           })}
         </div>
       </div>

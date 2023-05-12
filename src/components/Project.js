@@ -8,13 +8,15 @@ export default function Project(props) {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
   const lang = i18n.language;
 
-  const { data } = props;
+  const { data, index } = props;
+  console.log(index);
   return (
     <div
       id="Project-card "
       className={
-        data &&
-        `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[${data.lightBG}] rounded-[12px] dark:bg-[${data.darkBG}] text-[#000000] dark:text-[#FFFFFF]`
+        index % 2 === 0
+          ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#DDEEFE] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#FFFFFF]`
+          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#D9F6F1] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#495351]`
       }
     >
       <h3 id="projects-title" className="mb-4">
