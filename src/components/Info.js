@@ -6,9 +6,12 @@ import foto from "../info/foto.jpeg";
 import foto2 from "../info/000034.JPG";
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../contexts/Context";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 export default function () {
   const { theme, setTheme } = useContext(Context);
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
@@ -27,6 +30,11 @@ export default function () {
 
   const themeToggle = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const handleChangeLang = async (lang) => {
+    await i18n.changeLanguage(lang);
+    console.log(i18n);
   };
 
   console.log(theme);
@@ -62,9 +70,22 @@ export default function () {
 
           <h4 className="dark:text-[#D9D9D9] text-[#777777]">DARK MODE</h4>
           <span className="text-[#777777]">|</span>
-          <h4 className="dark:text-[#777777] text-[#777777]">
-            <span className="text-[#E92577]">TÜRKÇE</span>'YE GEÇ
-          </h4>
+          {i18n.language === "en" ? (
+            <h4
+              onClick={() => handleChangeLang("tr")}
+              className="dark:text-[#777777] text-[#777777]"
+            >
+              <span className="text-[#E92577]">TÜRKÇE</span>
+              'YE GEÇ
+            </h4>
+          ) : (
+            <h4
+              onClick={() => handleChangeLang("en")}
+              className="dark:text-[#777777] text-[#777777]"
+            >
+              TO <span className="text-[#E92577]">ENGLISH</span>
+            </h4>
+          )}
         </div>
         <section className="info flex flex-row justify-between mb-20">
           <div className="info-text flex flex-col w-3/5">

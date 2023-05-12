@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useTransition } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Info from "./components/Info";
