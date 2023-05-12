@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { Context } from "../contexts/Context";
+
 export default function Profile() {
+  const { t } = useContext(Context);
   return (
     <section
       id="Profile"
@@ -11,7 +15,7 @@ export default function Profile() {
           className="text-center text-[#000000] dark:text-[#FFFFFF]"
           id="section-title-small"
         >
-          Profile
+          {t("profileTitle")}
         </h1>
         <div className="flex flex-row justify-center  rounded-[12px] text-[#000000] dark:text-[#FFFFFF] ">
           <div
@@ -19,26 +23,24 @@ export default function Profile() {
             className="flex w-[46.5%] max-w-[500px] flex-col ml-7  p-10 gap-5 mt-[2rem] bg-[#FFFFFF] dark:bg-[#525252] shadow-gray"
           >
             <h4 id="basic-info" className="text-[#EA2678] mb-[0.8rem]">
-              Basic Information
+              {t("profileCardHeader")}
             </h4>
             <ul className="flex flex-col gap-5  ">
               <li className="flex flex-row">
-                <h5 id="info-heads">Doğum Tarihi</h5>
-                <span id="info-value">15.11.1993</span>
+                <h5 id="info-heads"> {t("profileCardBirthHead")}</h5>
+                <span id="info-value"> {t("profileCardBirthValue")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">İkamet Şehri</h5>
-                <span id="info-value">İstanbul</span>
+                <h5 id="info-heads">{t("profileCardCityHead")}</h5>
+                <span id="info-value">{t("profileCardCityValue")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">Eğitim Durumu</h5>
-                <span id="info-value">
-                  Eskişehir Osmangazi Üniversitesi Endüstri Mühendisliği, 2016
-                </span>
+                <h5 id="info-heads">{t("profileCardEducationHead")}</h5>
+                <span id="info-value">{t("profileCardEducationValue")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">Tercih Ettiği Rol</h5>
-                <span id="info-value">Frontend, UI</span>
+                <h5 id="info-heads">{t("profileCardRoleHead")}</h5>
+                <span id="info-value">{t("profileCardRoleValue")}</span>
               </li>
             </ul>
           </div>
@@ -46,17 +48,13 @@ export default function Profile() {
             <span className="relative">
               <span className="absolute w-[90px] h-[18px] bg-[#82BBFF] top-[1.04rem] left-[-0.7rem] rounded-[4px] dark:bg-[#82BBFF]"></span>{" "}
               <h4 id="about-me-title" className="relative z-10">
-                About me
+                {t("aboutMeTitle")}
               </h4>
             </span>{" "}
             <p id="about-me" className="mb-1">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-              aut, odit laborum aliquam voluptatum nisi mollitia.
+              {t("aboutMeFirstParag")}
             </p>
-            <p id="about-me">
-              Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod
-              deserunt quam temporibus cumque magnam!{" "}
-            </p>
+            <p id="about-me">{t("aboutMeSecondParag")}</p>
           </div>
         </div>
       </div>

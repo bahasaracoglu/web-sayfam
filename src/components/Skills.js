@@ -4,13 +4,19 @@ import nodeLogo from "../skills/nodeLogo.png";
 import reacLogo from "../skills/reactLogo.png";
 import reduxLogo from "../skills/reduxLogo.png";
 import vsLogo from "../skills/vsLogo.png";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
+import { useContext } from "react";
+import { Context } from "../contexts/Context";
 
 export default function Skills() {
+  const { t } = useContext(Context);
+
   return (
     <div className="flex justify-center flex-col items-center my-[5.1rem] dark:bg-[#484148] relative">
       <div className="absolute w-[181px] h-[49px] rounded-[29.5px] bg-[#525252] dark:bg-[#525252]  left-[8.5%] bottom-[-11.1%]"></div>
       <h1 id="section-title" className="text-[#0a0a14] dark:text-[#F4F4F4]">
-        Skills
+        {t("skillsTitle")}
       </h1>
       <div className="skills-img-container mt-4 my-[0.44rem] ">
         <ul className="flex gap-[2.2rem] justify-center items-center text-center py-10">

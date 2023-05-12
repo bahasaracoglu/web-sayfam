@@ -4,30 +4,27 @@ import arrowRightDark from "../projects/arrow-right-dark.svg";
 import s11g2 from "../projects/s11g2.png";
 import { Context } from "../contexts/Context";
 import { useContext } from "react";
-export default function Project() {
+export default function Project(props) {
   const { theme } = useContext(Context);
+  const { data } = props;
   return (
     <div
       id="Project-card "
-      className="	box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#DDEEFE] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#FFFFFF]"
+      className={`box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[${data.lightBG}] rounded-[12px] dark:bg-[${data.darkBG}] text-[#000000] dark:text-[#FFFFFF]`}
     >
       <h3 id="projects-title" className="mb-4">
-        Title
+        {data.titleEn}
       </h3>
-      <p id="projects-body">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut,
-        odit laborum aliquam voluptatum nisi mollitia.
-      </p>
+      <p id="projects-body">{data.bodyEn}</p>
 
       <ul className="flex flex-row flex-wrap w-80 gap-3 my-5">
-        <li id="used-skills">react</li>
-        <li id="used-skills">vercel</li>
-        <li id="used-skills">axios</li>
-        <li id="used-skills">router</li>
+        {data.skillsUsed.map((skill) => {
+          return <li id="used-skills">{skill}</li>;
+        })}
       </ul>
       <div id="project-links" className="flex justify-between mt-4">
-        <a href="#">View on GitHub</a>
-        <a href="#" className="flex">
+        <a href={data.gitHubLink}>View on GitHub</a>
+        <a href={data.vercelLink} className="flex">
           Go to app
           <img
             src={theme === "light" ? arrowRight : arrowRightDark}
@@ -40,7 +37,7 @@ export default function Project() {
         className="flex relative h-[500px] items-center justify-center"
       >
         <img
-          src={s11g2}
+          src={data.projectImageURL}
           className=" absolute top-[111px] max-w-[380px] h-[220px] object-cover "
         />
         <img src={laptop} className=" absolute top-[95px] max-w-[500px] " />

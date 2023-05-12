@@ -10,8 +10,8 @@ import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
 
 export default function () {
-  const { theme, setTheme } = useContext(Context);
-  const { t, i18n } = useTranslation();
+  const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
+
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
@@ -30,11 +30,6 @@ export default function () {
 
   const themeToggle = () => {
     setTheme(theme === "dark" ? "light" : "dark");
-  };
-
-  const handleChangeLang = async (lang) => {
-    await i18n.changeLanguage(lang);
-    console.log(i18n);
   };
 
   console.log(theme);
