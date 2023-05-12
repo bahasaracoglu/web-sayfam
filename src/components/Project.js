@@ -16,7 +16,7 @@ export default function Project(props) {
       className={
         index % 2 === 0
           ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#DDEEFE] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#FFFFFF]`
-          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#D9F6F1] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#495351]`
+          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#D9F6F1] rounded-[12px] dark:bg-[#495351] text-[#000000] dark:text-[#FFFFFF]`
       }
     >
       <h3 id="projects-title" className="mb-4">
